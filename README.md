@@ -1,11 +1,11 @@
-# Jets Project
+`jets new demo-ruby-jets --mode api`
+`jets g scaffold post title:string`
+database.ymlと.envを編集
+`jets db:create`
+`jets db:migrate`
 
-This README would normally document whatever steps are necessary to get the application up and running.
+`jets c`
+Post.create(title: 'my first post')
 
-Things you might want to cover:
-
-* Dependencies
-* Configuration
-* Database setup
-* How to run the test suite
-* Deployment instructions
+`jets s`
+http://127.0.0.1:8888/postsにアクセスし、JSONのレスポンスが返ってくることを確認
